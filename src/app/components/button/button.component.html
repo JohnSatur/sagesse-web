@@ -1,0 +1,10 @@
+<a [href]="url" target="_blank" rel="noopener noreferrer"
+    [ngClass]="{
+        'fill-btn': buttonType === 'fill',
+        'outline-btn': buttonType === 'outline',
+        'btn-blue': buttonColor === 'first',
+        'btn-green': buttonColor === 'second'
+        }" class="btn"
+>
+    {{ text }} <i [class]="icon"></i>
+</a>
