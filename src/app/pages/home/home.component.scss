@@ -3,6 +3,7 @@
     position: relative;
     height: 95vh;
     background: linear-gradient(180deg, #EEF1F600 50%, #EEF1F6 100%);
+    overflow: hidden;
 }
 
 .hero__background {
@@ -114,4 +115,94 @@
         border-radius: 50%;
         box-shadow: 0px 8px 8px 0px rgba(73, 73, 73, 0.25);
     }
+}
+
+// Introduction
+.intro {
+    position: relative;
+    overflow: hidden;
+}
+
+.intro__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.intro__img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.intro__copy {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.intro__title {
+    color: var(--second-color1);
+    font-size: var(--title-font-size);
+    line-height: 115%;
+    font-family: var(--title-font);
+
+    .title-highlight {
+        color: var(--first-color1);
+    }
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.circle4 {
+    width: 336px;
+    height: 336px;
+    background-color: var(--first-color2);
+    position: absolute;
+    left: -67px;
+    bottom: -40px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 8px 0px rgba(73, 73, 73, 0.25);
+}
+
+.circle5 {
+    width: 216px;
+    height: 216px;
+    background-color: var(--first-color3);
+    position: absolute;
+    left: 84px;
+    bottom: 221px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 8px 0px rgba(73, 73, 73, 0.25);
+}
+
+.circle6 {
+    width: 155px;
+    height: 155px;
+    background-color: var(--first-color4);
+    position: absolute;
+    left: 62px;
+    top: 254px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 8px 0px rgba(73, 73, 73, 0.25);
+}
+
+.circle7 {
+    width: 93px;
+    height: 93px;
+    background-color: var(--first-color5);
+    position: absolute;
+    left: 15px;
+    top: 237px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 8px 0px rgba(73, 73, 73, 0.25);
 }
