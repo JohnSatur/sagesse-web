@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --header-height: 5rem;
+
+    // Colors
+    --first-color1: #0077B3;
+    --first-color2: #00A3C1;
+    --first-color3: #00A6D0;
+    --first-color4: #22C1DD;
+    --first-color5: #75CFE4;
+
+    --second-color1: #008B55;
+    --second-color2: #009E54;
+    --second-color3: #00AF65;
+    --second-color4: #96CC77;
+    --second-color5: #B1CF78;
+
+    --text-color: #303035;
+    --text-color-light: #57575E;
+
+    --white-color: #FFFFFF;
+    --body-color: #F2F5F7;
+    --light-color: #EEF1F6;
+
+    // Fonts and typography
+    --body-font: "Poppins", sans-serif;
+    --title-font: "Century Gothic", sans-serif;
+
+    // z-index
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1500px;
+    margin-inline: auto;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: var(--body-font);
+}
