@@ -6,6 +6,7 @@
 }
 
 .hero__background {
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -13,6 +14,7 @@
     object-position: center;
     opacity: .35;
     z-index: -1;
+    filter: blur(5px);
 }
 
 .hero__container {
@@ -25,7 +27,18 @@
 .hero__copy {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
+    position: relative;
+
+    .hero__cloud-bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        max-width: none;
+        max-height: none;
+    }
 
     .hero__title {
         display: flex;
@@ -54,13 +67,51 @@
 }
 
 .hero__buttons {
+    padding-block: 1rem;
     display: flex;
     gap: 2rem;
 }
 
 .hero__img {
+    position: relative;
+
     img {
         width: 600px;
         border-radius: 50%;
+        box-shadow: 0px 8px 8px 0px rgba(73, 73, 73, 0.25);
+    }
+
+    .circle1 {
+        width: 250px;
+        height: 250px;
+        background-color: var(--first-color4);
+        position: absolute;
+        bottom: 50px;
+        right: -50px;
+        border-radius: 50%;
+        box-shadow: 0px 8px 8px 0px rgba(73, 73, 73, 0.25);
+
+    }
+
+    .circle2 {
+        width: 100px;
+        height: 100px;
+        background-color: var(--first-color3);
+        position: absolute;
+        bottom: 250px;
+        right: -30px;
+        border-radius: 50%;
+        box-shadow: 0px 8px 8px 0px rgba(73, 73, 73, 0.25);
+    }
+
+    .circle3 {
+        width: 150px;
+        height: 150px;
+        background-color: var(--first-color5);
+        position: absolute;
+        bottom: 0;
+        right: 90px;
+        border-radius: 50%;
+        box-shadow: 0px 8px 8px 0px rgba(73, 73, 73, 0.25);
     }
 }
