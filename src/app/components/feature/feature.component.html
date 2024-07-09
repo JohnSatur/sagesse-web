@@ -1,0 +1,12 @@
+<div class="feature" [ngClass]="{
+    'feature-left': orientation === 'left',
+    'feature-right': orientation === 'right'}"
+>
+    <div class="feature__icon">
+        <i [class]="icon"></i>
+    </div>
+
+    <h3 class="feature__title">{{ title }}</h3>
+
+    <p class="feature__description">{{ description }}</p>
+</div>

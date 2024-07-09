@@ -261,3 +261,42 @@
         font-weight: 600;
     }
 }
+
+// Features
+.features {
+    position: relative;
+}
+
+.features__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.features__row {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    gap: 5rem;
+}
+
+// Levels
+
+.levels {
+    position: relative;
+}
+
+.levels__container {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.levels__row {
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: center;
+}
