@@ -301,6 +301,13 @@
     justify-content: center;
 }
 
+.levels__row {
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 // Facilities
 .facilities {
     position: relative;

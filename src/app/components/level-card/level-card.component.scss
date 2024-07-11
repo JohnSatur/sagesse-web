@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     height: 350px;
+    min-width: calc((100vw - 8rem) / 3);
 }
 
 .card__color {
