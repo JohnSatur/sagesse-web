@@ -6,12 +6,13 @@ import { LevelCardComponent } from '../../components/level-card/level-card.compo
 
 import { register, SwiperContainer } from 'swiper/element/bundle';
 import { SwiperOptions } from 'swiper/types';
+import { ContactLinkComponent } from '../../components/contact-link/contact-link.component';
 register();
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, ButtonComponent, FeatureComponent, LevelCardComponent],
+  imports: [CommonModule, ButtonComponent, FeatureComponent, LevelCardComponent, ContactLinkComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

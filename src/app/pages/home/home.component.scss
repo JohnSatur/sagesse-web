@@ -544,3 +544,21 @@
         background-color: var(--first-color1);
     }
 }
+
+// Map
+
+.map {
+    position: relative;
+    min-height: 90vh;
+    background-color: #E8F7FC;
+}
+
+.map__map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}

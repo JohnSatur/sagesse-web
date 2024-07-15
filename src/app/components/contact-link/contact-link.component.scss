@@ -1,0 +1,44 @@
+.contact-link {
+    border: 8px solid var(--first-color2);
+    padding-block: 2rem;
+}
+
+.contact-link__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-link__info {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.contact-link__title {
+    font-size: 3rem;
+    color: var(--second-color2);
+    font-family: var(--title-font);
+    font-weight: 700;
+}
+
+.contact-link__description {
+    color: var(--text-color);
+}
+
+.contact-link__button {
+    padding: 1.5rem 3rem;
+    color: var(--light-color);
+    background-color: var(--first-color1);
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    i {
+        font-size: 2rem;
+    }
+}
