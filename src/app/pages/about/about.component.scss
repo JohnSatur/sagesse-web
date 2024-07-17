@@ -1,0 +1,132 @@
+.hero {
+    min-height: 85vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero__img1, .hero__img2, .hero__img3,
+.hero__circle1, .hero__circle2, .hero__circle3, .hero__circle4 {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hero__img1 {
+    right: 648px;
+    bottom: 305px;
+    width: 300px;
+    height: 300px;
+}
+
+.hero__img2 {
+    right: 62px;
+    bottom: -155px;
+    width: 500px;
+    height: 500px;
+}
+
+.hero__img3 {
+    right: 73px;
+    top: 103px;
+    width: 330px;
+    height: 330px;
+}
+
+.hero__circle1 {
+    width: 230px;
+    height: 230px;
+    background-color: var(--second-color1);
+    right: 495px;
+    bottom: 275px;
+}
+
+.hero__circle2 {
+    width: 160px;
+    height: 160px;
+    background-color: var(--second-color2);
+    right: 456px;
+    top: 322px;
+}
+
+.hero__circle3 {
+    width: 100px;
+    height: 100px;
+    background-color: var(--second-color3);
+    right: 448px;
+    top: 298px;
+}
+
+.hero__circle4 {
+    width: 60px;
+    height: 60px;
+    background-color: var(--second-color4);
+    right: 451px;
+    top: 269px;
+}
+
+.hero__container {
+    height: 100%;
+}
+
+.hero__copy {
+    width: 50%;
+}
+
+.hero__subtitle, .hero__description {
+    color: var(--text-color-light);
+}
+
+.hero__subtitle {
+    font-size: var(--big-font-size);
+    font-weight: 500;
+    color: var(--text-color-light);
+}
+
+.hero__title {
+    font-family: var(--title-font);
+    font-size: var(--biggest-font-size);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.hero__description {
+    font-weight: 400;
+}
+
+// Story
+.story {
+    background: linear-gradient(180deg, #066595 0%, #0077B3 50%, #066595 100%);
+    min-height: 80vh;
+}
+
+.story__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.story__copy {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.story__title {
+    font-family: var(--title-font);
+    font-size: var(--title-font-size);
+    color: var(--light-color);
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.50);
+
+}
+
+.story__description {
+    color: var(--light-color);
+}
+
+.story__img {
+    width: 40rem;
+    border-radius: 50%;
+    box-shadow: 0px 8px 8px 0px rgba(73, 73, 73, 0.25);
+}
