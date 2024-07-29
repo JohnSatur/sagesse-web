@@ -1,1274 +1,205 @@
-.conoce-nuestra {
+.hero {
+    min-height: 85vh;
     position: relative;
-    line-height: 100%;
-  }
-  .oferta-educativa {
-    margin: 0;
-    position: relative;
-    font-size: var(--font-size-61xl);
-    line-height: 6.25rem;
-    font-weight: 400;
-    font-family: var(--font-preahvihear);
-    color: var(--dark2);
-  }
-  .hero-title {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  .hero-description {
-    position: relative;
-    color: var(--dark2);
-    display: inline-block;
-    max-width: 100%;
-  }
-  .hero-copy {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: var(--gap-base);
-    max-width: 100%;
-  }
-  .hero-imgs-icon {
-    width: 53.688rem;
-    height: 44.188rem;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero__img1, .hero__img2, .hero__img3, .hero__img4,
+.hero__circle1, .hero__circle2, .hero__circle3, .hero__circle4, .hero__circle5 {
     position: absolute;
-    margin: 0 !important;
-    top: 9.125rem;
-    left: 3rem;
-  }
-  .hero {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 9.125rem var(--padding-181xl) 7.937rem 3rem;
-    box-sizing: border-box;
-    position: relative;
-    min-height: 61.25rem;
-    max-width: 100%;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-    color: var(--dark1);
-    font-family: var(--footer-menu-title);
-  }
-  .level-img-icon {
-    height: 37.5rem;
-    width: 37.5rem;
-    position: relative;
     border-radius: 50%;
-    object-fit: cover;
-    max-width: calc(100% - 920px);
-  }
-  .level-title {
-    margin: 0;
-    position: relative;
-    font-size: inherit;
-    line-height: 6.25rem;
-    font-weight: 400;
-    font-family: inherit;
-    display: inline-block;
-    max-width: 100%;
-  }
-  .btn-text,
-  .level-description {
-    position: relative;
-    font-size: var(--font-size-5xl);
-    font-family: var(--footer-menu-title);
-  }
-  .level-description {
-    align-self: stretch;
-    line-height: 162.5%;
-    color: var(--dark1);
-    text-align: justify;
-  }
-  .btn-text {
-    line-height: 150%;
-    font-weight: 500;
-    color: var(--light);
-    text-align: left;
-    display: inline-block;
-    min-width: 6.313rem;
-  }
-  .btn-icon {
-    height: 1.5rem;
-    width: 1.5rem;
-    position: relative;
-  }
-  .level-button {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xl) var(--padding-13xl);
-    background-color: var(--blue1);
-    border-radius: var(--br-5xs);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap-base);
-    white-space: nowrap;
-  }
-  .level-button1:hover,
-  .level-button2:hover,
-  .level-button3:hover,
-  .level-button4:hover,
-  .level-button:hover,
-  .school-management:hover {
-    background-color: var(--color-deepskyblue-100);
-  }
-  .level-copy,
-  .level-left {
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-  .level-copy {
-    flex: 1;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: var(--padding-xl) 0;
-    gap: var(--gap-17xl);
-    max-width: calc(100% - 664px);
-    flex-shrink: 0;
-  }
-  .level-left {
-    align-self: stretch;
-    height: 31.25rem;
-    background-color: var(--light);
-    flex-direction: row;
-    align-items: center;
-    padding: 0 var(--padding-181xl);
-    gap: var(--gap-45xl);
-    max-width: 100%;
-  }
-  .level-title1 {
-    margin: 0;
-    width: 28.375rem;
-    position: relative;
-    font-size: inherit;
-    line-height: 6.25rem;
-    font-weight: 400;
-    font-family: inherit;
-    display: inline-block;
-    max-width: 100%;
-  }
-  .btn-text1,
-  .level-description1 {
-    position: relative;
-    font-size: var(--font-size-5xl);
-    font-family: var(--footer-menu-title);
-  }
-  .level-description1 {
-    align-self: stretch;
-    line-height: 162.5%;
-    color: var(--dark1);
-    text-align: justify;
-  }
-  .btn-text1 {
-    line-height: 150%;
-    font-weight: 500;
-    color: var(--light);
-    text-align: left;
-    display: inline-block;
-    min-width: 6.313rem;
-  }
-  .btn-icon1 {
-    height: 1.5rem;
-    width: 1.5rem;
-    position: relative;
-  }
-  .level-button1,
-  .level-copy1 {
-    display: flex;
-    justify-content: center;
-  }
-  .level-button1 {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xl) var(--padding-13xl);
-    background-color: var(--blue1);
-    border-radius: var(--br-5xs);
-    overflow: hidden;
-    flex-direction: row;
-    align-items: center;
-    gap: var(--gap-base);
-    white-space: nowrap;
-  }
-  .level-copy1 {
-    flex: 1;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: var(--padding-xl) 0;
-    box-sizing: border-box;
-    gap: var(--gap-17xl);
-    max-width: calc(100% - 664px);
-    flex-shrink: 0;
-  }
-  .level-img-icon1 {
-    height: 37.5rem;
-    width: 37.5rem;
-    position: relative;
-    border-radius: 50%;
-    object-fit: cover;
-    max-width: calc(100% - 920px);
-  }
-  .level-right {
-    align-self: stretch;
-    height: 31.25rem;
-    background-color: var(--light);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 0 var(--padding-181xl);
-    box-sizing: border-box;
-    gap: var(--gap-45xl);
-    max-width: 100%;
-  }
-  .level-img-icon2 {
-    height: 37.5rem;
-    width: 37.5rem;
-    position: relative;
-    border-radius: 50%;
-    object-fit: cover;
-    max-width: calc(100% - 920px);
-  }
-  .level-title2 {
-    margin: 0;
-    position: relative;
-    font-size: inherit;
-    line-height: 6.25rem;
-    font-weight: 400;
-    font-family: inherit;
-    display: inline-block;
-    max-width: 100%;
-  }
-  .btn-text2,
-  .level-description2 {
-    position: relative;
-    font-size: var(--font-size-5xl);
-    font-family: var(--footer-menu-title);
-  }
-  .level-description2 {
-    align-self: stretch;
-    line-height: 162.5%;
-    color: var(--dark1);
-    text-align: justify;
-  }
-  .btn-text2 {
-    line-height: 150%;
-    font-weight: 500;
-    color: var(--light);
-    text-align: left;
-    display: inline-block;
-    min-width: 6.313rem;
-  }
-  .btn-icon2 {
-    height: 1.5rem;
-    width: 1.5rem;
-    position: relative;
-  }
-  .level-button2 {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xl) var(--padding-13xl);
-    background-color: var(--blue1);
-    border-radius: var(--br-5xs);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap-base);
-    white-space: nowrap;
-  }
-  .level-copy2,
-  .level-left1 {
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-  .level-copy2 {
-    flex: 1;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: var(--padding-xl) 0;
-    gap: var(--gap-17xl);
-    max-width: calc(100% - 664px);
-    flex-shrink: 0;
-  }
-  .level-left1 {
-    align-self: stretch;
-    height: 31.25rem;
-    background-color: var(--light);
-    flex-direction: row;
-    align-items: center;
-    padding: 0 var(--padding-181xl);
-    gap: var(--gap-45xl);
-    max-width: 100%;
-  }
-  .level-title3 {
-    margin: 0;
-    position: relative;
-    font-size: inherit;
-    line-height: 6.25rem;
-    font-weight: 400;
-    font-family: inherit;
-    display: inline-block;
-    max-width: 100%;
-  }
-  .btn-text3,
-  .level-description3 {
-    position: relative;
-    font-size: var(--font-size-5xl);
-    font-family: var(--footer-menu-title);
-  }
-  .level-description3 {
-    align-self: stretch;
-    line-height: 162.5%;
-    color: var(--dark1);
-    text-align: justify;
-  }
-  .btn-text3 {
-    line-height: 150%;
-    font-weight: 500;
-    color: var(--light);
-    text-align: left;
-    display: inline-block;
-    min-width: 6.313rem;
-  }
-  .btn-icon3 {
-    height: 1.5rem;
-    width: 1.5rem;
-    position: relative;
-  }
-  .level-button3,
-  .level-copy3 {
-    display: flex;
-    justify-content: center;
-  }
-  .level-button3 {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xl) var(--padding-13xl);
-    background-color: var(--blue1);
-    border-radius: var(--br-5xs);
-    overflow: hidden;
-    flex-direction: row;
-    align-items: center;
-    gap: var(--gap-base);
-    white-space: nowrap;
-  }
-  .level-copy3 {
-    flex: 1;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: var(--padding-xl) 0;
-    box-sizing: border-box;
-    gap: var(--gap-17xl);
-    max-width: calc(100% - 664px);
-    flex-shrink: 0;
-  }
-  .level-img-icon3 {
-    height: 37.5rem;
-    width: 37.5rem;
-    position: relative;
-    border-radius: 50%;
-    object-fit: cover;
-    max-width: calc(100% - 920px);
-  }
-  .level-right1 {
-    align-self: stretch;
-    height: 31.25rem;
-    background-color: var(--light);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 0 var(--padding-181xl);
-    box-sizing: border-box;
-    gap: var(--gap-45xl);
-    max-width: 100%;
-  }
-  .level-img-icon4 {
-    height: 37.5rem;
-    width: 37.5rem;
-    position: relative;
-    border-radius: 50%;
-    object-fit: cover;
-    max-width: calc(100% - 920px);
-  }
-  .level-title4 {
-    margin: 0;
-    position: relative;
-    font-size: inherit;
-    line-height: 6.25rem;
-    font-weight: 400;
-    font-family: inherit;
-    display: inline-block;
-    max-width: 100%;
-  }
-  .btn-text4,
-  .level-description4 {
-    position: relative;
-    font-size: var(--font-size-5xl);
-    font-family: var(--footer-menu-title);
-  }
-  .level-description4 {
-    align-self: stretch;
-    line-height: 162.5%;
-    color: var(--dark1);
-    text-align: justify;
-  }
-  .btn-text4 {
-    line-height: 150%;
-    font-weight: 500;
-    color: var(--light);
-    text-align: left;
-    display: inline-block;
-    min-width: 6.313rem;
-  }
-  .btn-icon4 {
-    height: 1.5rem;
-    width: 1.5rem;
-    position: relative;
-  }
-  .level-button4 {
-    cursor: pointer;
-    border: 0;
-    padding: var(--padding-xl) var(--padding-13xl);
-    background-color: var(--blue1);
-    border-radius: var(--br-5xs);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap-base);
-    white-space: nowrap;
-  }
-  .level-copy4,
-  .level-left2,
-  .levels {
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-  .level-copy4 {
-    flex: 1;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: var(--padding-xl) 0;
-    gap: var(--gap-17xl);
-    max-width: calc(100% - 664px);
-    flex-shrink: 0;
-  }
-  .level-left2,
-  .levels {
-    align-self: stretch;
-    align-items: center;
-    max-width: 100%;
-  }
-  .level-left2 {
-    height: 31.25rem;
-    background-color: var(--light);
-    flex-direction: row;
-    padding: 0 var(--padding-181xl);
-    gap: var(--gap-45xl);
-  }
-  .levels {
-    flex-direction: column;
-    padding: var(--padding-181xl) 0;
-    gap: 12.5rem;
-    text-align: right;
-    font-size: var(--font-size-61xl);
-    color: var(--dark2);
-    font-family: var(--font-preahvihear);
-  }
-  .quires-saber-ms {
-    margin: 0;
-    position: relative;
-    font-size: inherit;
-    font-weight: 400;
-    font-family: inherit;
-    display: inline-block;
-    max-width: 100%;
-  }
-  .ponte-en-contacto {
-    position: relative;
-    font-size: var(--font-size-5xl);
-    font-family: var(--footer-menu-title);
-    color: var(--dark1);
-  }
-  .contact-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    max-width: 100%;
-  }
-  .dark-button1 {
-    position: relative;
-    line-height: 150%;
-    font-weight: 500;
-  }
-  .vector-icon {
-    height: 1.263rem;
-    width: 1.5rem;
-    position: relative;
-  }
-  .contact-link-desktop,
-  .dark-button {
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .dark-button {
-    border-radius: var(--br-5xs);
-    background-color: var(--blue1);
-    justify-content: center;
-    padding: var(--padding-xl) var(--padding-13xl);
-    gap: var(--gap-base);
-    font-size: var(--font-size-5xl);
-    color: var(--light);
-    font-family: var(--footer-menu-title);
-  }
-  .contact-link-desktop {
-    align-self: stretch;
-    border: 8px solid var(--blue2);
-    box-sizing: border-box;
-    justify-content: space-between;
-    padding: 1.437rem var(--padding-181xl);
-    max-width: 100%;
-    gap: var(--gap-xl);
-    text-align: left;
-    font-size: 2.25rem;
-    color: var(--green1);
-    font-family: var(--font-preahvihear);
-  }
-  .menu {
-    position: relative;
-    line-height: 100%;
-  }
-  .menu1 {
-    display: inline-block;
-    min-width: 3.313rem;
-  }
-  .menu1,
-  .oferta-educativa1,
-  .quines-somos {
-    position: relative;
-    line-height: 100%;
-    cursor: pointer;
-  }
-  .admisiones {
-    display: inline-block;
-    min-width: 7.313rem;
-  }
-  .admisiones,
-  .vida-estudiantil {
-    position: relative;
-    line-height: 100%;
-    cursor: pointer;
-  }
-  .blog,
-  .contacto {
-    position: relative;
-    line-height: 100%;
-    display: inline-block;
-    min-width: 2.75rem;
-  }
-  .contacto {
-    min-width: 5.938rem;
-  }
-  .footer-menu,
-  .footer-menuitems {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  .footer-menuitems {
-    gap: var(--gap-xs);
-    color: var(--light2);
-  }
-  .footer-menu {
-    gap: var(--gap-base);
-  }
-  .menu2 {
-    position: relative;
-    line-height: 100%;
-  }
-  .menu3,
-  .preescolar,
-  .prefirst,
-  .primaria,
-  .secundaria {
-    position: relative;
-    line-height: 100%;
-    display: inline-block;
-    min-width: 5.625rem;
-  }
-  .preescolar,
-  .prefirst,
-  .primaria,
-  .secundaria {
-    min-width: 6.625rem;
-  }
-  .prefirst,
-  .primaria,
-  .secundaria {
-    min-width: 4.313rem;
-  }
-  .primaria,
-  .secundaria {
-    min-width: 5.25rem;
-  }
-  .secundaria {
-    min-width: 7.188rem;
-  }
-  .footer-menu1,
-  .footer-menuitems1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  .footer-menuitems1 {
-    gap: var(--gap-xs);
-    color: var(--light2);
-  }
-  .footer-menu1 {
-    gap: var(--gap-base);
-  }
-  .menu4 {
-    position: relative;
-    line-height: 100%;
-    display: inline-block;
-    min-width: 6.063rem;
-  }
-  .pin-icon {
-    height: 1.669rem;
-    width: 1.331rem;
-    position: relative;
-  }
-  .risco-17-la {
-    flex: 1;
-    position: relative;
-    line-height: 100%;
-    display: inline-block;
-    min-width: 17rem;
-    max-width: 100%;
-  }
-  .address {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-base);
-    max-width: 100%;
-  }
-  .vector-icon1 {
-    height: 1.5rem;
-    width: 1.5rem;
-    position: relative;
-  }
-  .div {
-    position: relative;
-    line-height: 100%;
-  }
-  .phone {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-base);
-    max-width: 100%;
-  }
-  .vector-icon2 {
-    height: 1.5rem;
-    width: 1.5rem;
-    position: relative;
-  }
-  .div1 {
-    flex: 1;
-    position: relative;
-    line-height: 100%;
-  }
-  .phone1 {
-    width: 20.438rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-base);
-    max-width: 100%;
-  }
-  .vector-icon3 {
-    align-self: stretch;
-    width: 1.669rem;
-    position: relative;
-    max-height: 100%;
-    min-height: 1.313rem;
-  }
-  .contactocolegiosagessecom {
-    position: relative;
-    line-height: 100%;
-    white-space: nowrap;
-  }
-  .phone2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-base);
-    max-width: 100%;
-  }
-  .footer-maininfo,
-  .footer-menu2,
-  .footer-menuitems2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: var(--gap-base);
-    max-width: 100%;
-  }
-  .footer-menuitems2 {
-    align-self: stretch;
-    color: var(--light2);
-  }
-  .footer-maininfo,
-  .footer-menu2 {
-    width: 28.519rem;
-  }
-  .footer-maininfo {
-    width: 95rem;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: var(--gap-xl);
-  }
-  .redes-sociales {
-    position: relative;
-    line-height: 100%;
-  }
-  .social-icon-list {
-    height: 2.813rem;
-    width: 2.813rem;
-    position: relative;
-    min-height: 2.813rem;
-  }
-  .vector-icon4 {
-    height: 2.563rem;
-    width: 2.25rem;
-    position: relative;
-  }
-  .social-icon-list1 {
-    height: 2.813rem;
-    width: 2.813rem;
-    position: relative;
-    min-height: 2.813rem;
-  }
-  .vector-icon5 {
-    height: 1.938rem;
-    width: 2.875rem;
-    position: relative;
-  }
-  .footer-social-icons {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--gap-xl);
-  }
-  .footer-social {
-    width: 16.75rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: var(--padding-xl) 0;
-    box-sizing: border-box;
-    gap: var(--gap-base);
-  }
-  .footer-logo-icon {
-    height: 9.375rem;
-    width: 11.875rem;
-    position: relative;
-    object-fit: cover;
-  }
-  .aviso-de-privacidad {
-    font-weight: 600;
-  }
-  .aviso-de-privacidad,
-  .div2,
-  .poltica-de-cookies {
-    position: relative;
-    line-height: 100%;
-  }
-  .div2 {
-    font-weight: 500;
-    display: inline-block;
-    min-width: 0.25rem;
-  }
-  .poltica-de-cookies {
-    font-weight: 600;
-  }
-  .legal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap-5xs);
-  }
-  .colegio-sagesse-todos {
-    position: relative;
-    line-height: 100%;
-    font-weight: 300;
-  }
-  .sitio-web-desarrollado {
-    font-weight: 300;
-  }
-  .ecosistema-hisoka {
-    font-weight: 500;
-  }
-  .sitio-web-desarrollado-container {
-    position: relative;
-    line-height: 100%;
-  }
-  .copyright,
-  .footer-copy {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .copyright {
-    display: flex;
-    align-items: center;
-    gap: var(--gap-5xs);
-    color: var(--light2);
-  }
-  .footer-copy {
-    padding: var(--padding-xl) 0;
-    box-sizing: border-box;
-    gap: var(--gap-base);
-    font-size: var(--font-size-sm);
-  }
-  .footer-copy,
-  .footer-desktop,
-  .footer-secondaryinfo {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-  }
-  .footer-secondaryinfo {
-    width: 95rem;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: var(--gap-xl);
-  }
-  .footer-desktop {
-    align-self: stretch;
-    background-color: var(--blue3);
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3.75rem var(--padding-xl);
-    box-sizing: border-box;
-    gap: var(--gap-45xl);
-    text-align: left;
-    font-size: var(--footer-menu-title-size);
-    color: var(--light);
-    font-family: var(--footer-menu-title);
-  }
-  .logo-icon {
-    height: 4.25rem;
-    width: 5.163rem;
-    position: relative;
-    object-fit: cover;
-  }
-  .inicio {
-    text-decoration: none;
-    position: relative;
-    color: inherit;
-    display: inline-block;
-    min-width: 2.625rem;
-    cursor: pointer;
-  }
-  .quines-somos1 {
-    display: inline-block;
-    min-width: 6.938rem;
-  }
-  .oferta-educativa2,
-  .quines-somos1 {
-    position: relative;
-    white-space: nowrap;
-    cursor: pointer;
-  }
-  .admisiones1 {
-    min-width: 5.188rem;
-    cursor: pointer;
-  }
-  .admisiones1,
-  .blog1,
-  .contacto1,
-  .vida-estudiantil1 {
-    position: relative;
-    display: inline-block;
-  }
-  .vida-estudiantil1 {
-    min-width: 7.438rem;
-    white-space: nowrap;
-  }
-  .blog1,
-  .contacto1 {
-    min-width: 2.313rem;
-  }
-  .contacto1 {
-    min-width: 4.938rem;
-  }
-  .gestin-escolar,
-  .menu5 {
-    font-size: var(--font-size-sm);
-    font-family: var(--footer-menu-title);
-    text-align: left;
-  }
-  .menu5 {
-    margin: 0;
-    width: 60.188rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 3.75rem;
-    max-width: 100%;
-    color: var(--dark2);
-  }
-  .gestin-escolar {
-    position: relative;
-    line-height: 100%;
-    color: var(--light);
-    display: inline-block;
-    min-width: 7.75rem;
-  }
-  .school-management {
-    cursor: pointer;
-    border: 0;
-    padding: 1rem;
-    background-color: var(--blue1);
-    border-radius: var(--br-5xs);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-  }
-  .navbar-desktop,
-  .offer-desktop {
+}
+
+.hero__img1 {
+    left: 48px;
+    top: 146px;
+    width: 350px;
+    height: 350px;
+}
+
+.hero__img2 {
+    left: 545px;
+    top: 263px;
+    width: 250px;
+    height: 250px;
+}
+
+.hero__img3 {
+    left: 731px;
+    bottom: 137px;
+    width: 100px;
+    height: 100px;
+}
+
+.hero__img4 {
+    left: 337px;
+    bottom: 127px;
+    width: 200px;
+    height: 200px;
+}
+
+.hero__circle1 {
+    width: 230px;
+    height: 230px;
+    background-color: var(--first-color1);
+    left: 115px;
+    bottom: 178px;
+}
+
+.hero__circle2 {
+    width: 160px;
+    height: 160px;
+    background-color: var(--first-color2);
+    left: 434px;
+    top: 303px;
+}
+
+.hero__circle3 {
+    width: 100px;
+    height: 100px;
+    background-color: var(--first-color3);
+    left: 435px;
+    bottom: 271px;
+}
+
+.hero__circle4 {
+    width: 60px;
+    height: 60px;
+    background-color: var(--first-color4);
+    left: 531px;
+    bottom: 223px;
+}
+
+.hero__circle5 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--first-color4);
+    left: 531px;
+    bottom: 183px;
+}
+
+.hero__container {
     width: 100%;
-    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero__copy {
+    width: 50%;
+}
+
+.hero__subtitle, .hero__description {
+    color: var(--text-color-light);
+}
+
+.hero__subtitle {
+    font-size: var(--big-font-size);
+    font-weight: 500;
+    color: var(--text-color-light);
+}
+
+.hero__title {
+    font-family: var(--title-font);
+    font-size: var(--biggest-font-size);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.hero__description {
+    font-weight: 400;
+}
+
+// Levels
+.levels {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.level__img {
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &.left-img {
+        left: 0;
+    }
+    
+    &.right-img {
+        right: 0;
+    }
+}
+
+.levels__card {
+    background-color: var(--white-color);
+}
+
+.level__container {
+    width: 100%;
     display: flex;
     align-items: center;
-  }
-  .navbar-desktop {
-    margin: 0 !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(238, 241, 246, 0.9);
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1.493rem var(--padding-181xl);
-    box-sizing: border-box;
-    gap: var(--gap-xl);
-    max-width: 100%;
-    z-index: 1;
-  }
-  .offer-desktop {
+    justify-content: flex-end;
+    gap: 2rem;
     position: relative;
-    background-color: #f2f5f7;
+
+    &.right-card {
+        flex-direction: row;
+    }
+
+    &.right-card {
+        flex-direction: row-reverse;
+    }
+}
+
+.level__copy {
+    width: 50%;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-  @media screen and (max-width: 1575px) {
-    .level-copy,
-    .level-copy1,
-    .level-copy2,
-    .level-copy3,
-    .level-copy4,
-    .level-img-icon,
-    .level-img-icon1,
-    .level-img-icon2,
-    .level-img-icon3,
-    .level-img-icon4 {
-      display: none;
-      max-width: 100%;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding-block: 2rem;
+
+    &.left-copy {
+        align-items: flex-start;
+
+        & .level__description {
+            text-align-last: left;
+        }
     }
-    .contact-link-desktop {
-      flex-wrap: wrap;
+
+    &.right-copy {
+        align-items: flex-end;
+
+        & .level__description {
+            text-align-last: right;
+        }
     }
-  }
-  @media screen and (max-width: 1275px) {
-    .hero {
-      padding-left: 1.5rem;
-      padding-right: var(--padding-81xl);
-      box-sizing: border-box;
+}
+
+.level__title {
+    font-size: var(--title-font-size);
+    color: var(--text-color);
+}
+
+.level__button {
+    padding: 1.5rem 3rem;
+    color: var(--light-color);
+    background-color: var(--first-color1);
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    i {
+        font-size: 2rem;
     }
-    .level-left,
-    .level-left1,
-    .level-left2,
-    .level-right,
-    .level-right1 {
-      gap: var(--gap-13xl);
-      padding-left: var(--padding-81xl);
-      padding-right: var(--padding-81xl);
-      box-sizing: border-box;
-    }
-    .levels {
-      gap: 6.25rem;
-      padding-top: var(--padding-36xl);
-      padding-bottom: var(--padding-36xl);
-      box-sizing: border-box;
-    }
-    .contact-link-desktop {
-      padding-left: var(--padding-81xl);
-      padding-right: var(--padding-81xl);
-      box-sizing: border-box;
-    }
-    .footer-maininfo,
-    .footer-secondaryinfo {
-      flex-wrap: wrap;
-    }
-    .menu5 {
-      display: none;
-      gap: 1.875rem;
-    }
-    .navbar-desktop {
-      width: 59.813rem;
-      padding-left: var(--padding-81xl);
-      padding-right: var(--padding-81xl);
-      box-sizing: border-box;
-    }
-  }
-  @media screen and (max-width: 825px) {
-    .oferta-educativa {
-      font-size: var(--font-size-21xl);
-      line-height: 3.75rem;
-    }
-    .hero {
-      padding-right: var(--padding-31xl);
-      box-sizing: border-box;
-    }
-    .level-title {
-      font-size: var(--font-size-21xl);
-      line-height: 3.75rem;
-    }
-    .level-left {
-      gap: var(--gap-base);
-      padding-left: var(--padding-31xl);
-      padding-right: var(--padding-31xl);
-      box-sizing: border-box;
-    }
-    .level-title1 {
-      font-size: var(--font-size-21xl);
-      line-height: 3.75rem;
-    }
-    .level-right {
-      gap: var(--gap-base);
-      padding-left: var(--padding-31xl);
-      padding-right: var(--padding-31xl);
-      box-sizing: border-box;
-    }
-    .level-title2 {
-      font-size: var(--font-size-21xl);
-      line-height: 3.75rem;
-    }
-    .level-left1 {
-      gap: var(--gap-base);
-      padding-left: var(--padding-31xl);
-      padding-right: var(--padding-31xl);
-      box-sizing: border-box;
-    }
-    .level-title3 {
-      font-size: var(--font-size-21xl);
-      line-height: 3.75rem;
-    }
-    .level-right1 {
-      gap: var(--gap-base);
-      padding-left: var(--padding-31xl);
-      padding-right: var(--padding-31xl);
-      box-sizing: border-box;
-    }
-    .level-title4 {
-      font-size: var(--font-size-21xl);
-      line-height: 3.75rem;
-    }
-    .level-left2 {
-      gap: var(--gap-base);
-      padding-left: var(--padding-31xl);
-      padding-right: var(--padding-31xl);
-      box-sizing: border-box;
-    }
-    .levels {
-      gap: 3.125rem;
-    }
-    .quires-saber-ms {
-      font-size: 1.813rem;
-    }
-    .contact-link-desktop {
-      padding-left: var(--padding-31xl);
-      padding-right: var(--padding-31xl);
-      box-sizing: border-box;
-    }
-    .footer-desktop {
-      gap: var(--gap-13xl);
-      padding-top: var(--padding-20xl);
-      padding-bottom: var(--padding-20xl);
-      box-sizing: border-box;
-    }
-    .navbar-desktop {
-      padding-left: var(--padding-31xl);
-      padding-right: var(--padding-31xl);
-      box-sizing: border-box;
-    }
-  }
-  @media screen and (max-width: 450px) {
-    .conoce-nuestra {
-      font-size: var(--font-size-lgi);
-      line-height: 1.188rem;
-    }
-    .oferta-educativa {
-      font-size: var(--font-size-5xl);
-      line-height: 2.5rem;
-    }
-    .hero-description {
-      font-size: var(--font-size-lgi);
-    }
-    .hero {
-      padding-top: 5.938rem;
-      padding-bottom: 5.188rem;
-      box-sizing: border-box;
-    }
-    .level-title {
-      font-size: var(--font-size-5xl);
-      line-height: 2.5rem;
-    }
-    .level-description {
-      font-size: var(--font-size-lgi);
-      line-height: 1.938rem;
-    }
-    .level-copy {
-      gap: var(--gap-lg);
-    }
-    .level-title1 {
-      font-size: var(--font-size-5xl);
-      line-height: 2.5rem;
-    }
-    .level-description1 {
-      font-size: var(--font-size-lgi);
-      line-height: 1.938rem;
-    }
-    .level-copy1 {
-      gap: var(--gap-lg);
-    }
-    .level-title2 {
-      font-size: var(--font-size-5xl);
-      line-height: 2.5rem;
-    }
-    .level-description2 {
-      font-size: var(--font-size-lgi);
-      line-height: 1.938rem;
-    }
-    .level-copy2 {
-      gap: var(--gap-lg);
-    }
-    .level-title3 {
-      font-size: var(--font-size-5xl);
-      line-height: 2.5rem;
-    }
-    .level-description3 {
-      font-size: var(--font-size-lgi);
-      line-height: 1.938rem;
-    }
-    .level-copy3 {
-      gap: var(--gap-lg);
-    }
-    .level-title4 {
-      font-size: var(--font-size-5xl);
-      line-height: 2.5rem;
-    }
-    .level-description4 {
-      font-size: var(--font-size-lgi);
-      line-height: 1.938rem;
-    }
-    .level-copy4 {
-      gap: var(--gap-lg);
-    }
-    .levels {
-      padding-top: var(--padding-17xl);
-      padding-bottom: var(--padding-17xl);
-      box-sizing: border-box;
-    }
-    .quires-saber-ms {
-      font-size: 1.375rem;
-    }
-    .dark-button1,
-    .ponte-en-contacto {
-      font-size: var(--font-size-lgi);
-    }
-    .dark-button1 {
-      line-height: 1.813rem;
-    }
-    .contact-link-desktop {
-      padding-left: var(--padding-xl);
-      padding-right: var(--padding-xl);
-      box-sizing: border-box;
-    }
-    .admisiones,
-    .blog,
-    .contacto,
-    .menu,
-    .menu1,
-    .menu2,
-    .menu3,
-    .menu4,
-    .oferta-educativa1,
-    .preescolar,
-    .prefirst,
-    .primaria,
-    .quines-somos,
-    .risco-17-la,
-    .secundaria,
-    .vida-estudiantil {
-      font-size: var(--font-size-base);
-      line-height: 1rem;
-    }
-    .address {
-      flex-wrap: wrap;
-    }
-    .contactocolegiosagessecom,
-    .div,
-    .div1,
-    .redes-sociales {
-      font-size: var(--font-size-base);
-      line-height: 1rem;
-    }
-    .footer-desktop {
-      gap: var(--gap-base);
-    }
-    .navbar-desktop {
-      padding-left: var(--padding-xl);
-      padding-right: var(--padding-xl);
-      box-sizing: border-box;
-    }
-  }
-  
+}
