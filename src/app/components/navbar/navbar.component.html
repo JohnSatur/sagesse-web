@@ -4,15 +4,31 @@
         <a href="#" class="nav__logo-link">
             <img src="img/logo-sm.png" alt="Logo del Colegio Sagesse" class="nav__logo">
         </a>
-        <ul class="nav__list">
-            <li class="nav__item" routerLink="" routerLinkActive="active">Inicio</li>
-            <li class="nav__item" routerLink="/quienes-somos" routerLinkActive="active">Quiénes Somos</li>
-            <li class="nav__item" routerLink="/oferta-educativa" routerLinkActive="active">Oferta Educativa</li>
-            <li class="nav__item" routerLink="/admisiones" routerLinkActive="active">Admisiones</li>
-            <li class="nav__item" routerLink="/vida-estudiantil" routerLinkActive="active">Vida Estudiantil</li>
-            <li class="nav__item" routerLink="/blog" routerLinkActive="active">Blog</li>
-            <li class="nav__item" routerLink="/contacto" routerLinkActive="active">Contacto</li>
-        </ul>
-        <a href="#" class="nav__btn">Gestión Escolar</a>
+        <div class="nav__menu show-menu" [ngClass]="{'show-menu': showMenu}">
+            <a href="#">
+                <img src="img/logo-sm.png" alt="" class="nav__mobile-logo">
+            </a>
+            <ul class="nav__list">
+                <li class="nav__item" routerLink="" routerLinkActive="active">Inicio</li>
+                <li class="nav__item" routerLink="/quienes-somos" routerLinkActive="active">Quiénes Somos</li>
+                <li class="nav__item" routerLink="/oferta-educativa" routerLinkActive="active">Oferta Educativa</li>
+                <li class="nav__item" routerLink="/admisiones" routerLinkActive="active">Admisiones</li>
+                <li class="nav__item" routerLink="/vida-estudiantil" routerLinkActive="active">Vida Estudiantil</li>
+                <li class="nav__item" routerLink="/blog" routerLinkActive="active">Blog</li>
+                <li class="nav__item" routerLink="/contacto" routerLinkActive="active">Contacto</li>
+
+                <div class="nav__spacer"></div>
+
+                <a href="#" class="nav__btn">Gestión Escolar</a>
+
+                <div class="nav__close" id="nav-close" (click)="toggleNavbar()">
+                    <i class="ri-close-line"></i>
+                </div>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle" (click)="toggleNavbar()">
+            <i class="ri-menu-fill"></i>
+        </div>
     </nav>
 </header>

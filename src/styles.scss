@@ -90,3 +90,21 @@ input:focus, textarea:focus {
 .section {
     padding-block: 5rem 5rem;
 }
+
+@media screen and (max-width: 1600px) {
+    :root {
+        --biggest-font-size: 4rem;
+        --title-font-size: 3rem;
+        --big-font-size: 1.5rem;
+    }
+    
+    .container {
+        max-width: 1300px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        max-width: 1000px;
+    }
+}

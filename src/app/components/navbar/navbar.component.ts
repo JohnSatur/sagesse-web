@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -10,5 +10,9 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  @HostBinding('class.show-menu') showMenu: boolean = false;
 
+  public toggleNavbar(): void {
+    this.showMenu = !this.showMenu;
+  }
 }
