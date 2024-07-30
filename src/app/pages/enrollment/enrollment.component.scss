@@ -1,0 +1,94 @@
+// Hero section
+.hero {
+    min-height: 80vh;
+    background: linear-gradient(180deg, rgba(0, 163, 193, 0.00) 0%, var(--first-color2) 100%), url("/img/enrollment-bg.jpg") lightgray 50% / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero__subtitle {
+    font-size: var(--big-font-size);
+    color: var(--light-color);
+    font-weight: 300;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero__title {
+    font-size: var(--biggest-font-size);
+    color: var(--white-color);
+    line-height: 100%;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.50);
+}
+
+// Steps
+
+.steps {
+    background: linear-gradient(180deg, #00A3C1 0%, rgba(0, 163, 193, 0.00) 20%);
+}
+
+.steps__container {
+    display: flex;
+    gap: 3rem;
+}
+
+.steps__step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+
+    p {
+        color: var(--text-color-light);
+        font-size: 1.2rem;
+    }
+}
+
+.step__title {
+    font-family: var(--title-font);
+    font-size: var(--title-font-size);
+    color: var(--text-color);
+}
+
+.step__list {
+    font-size: 1.2rem;
+    color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.step__item {
+    display: flex;
+    gap: .3rem;
+    align-items: flex-start;
+
+    i {
+        font-size: 1.8rem;
+    }
+}
+
+.step__number {
+    font-size: 10rem;
+    font-weight: 600;
+    color: var(--text-color-light);
+    opacity: .3;
+    line-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
