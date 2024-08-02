@@ -28,11 +28,11 @@
     --biggest-font-size: 5rem;
     --title-font-size: 4rem;
     --big-font-size: 2rem;
+    --normal-font-size: 1.2rem;
 
     // z-index
     --z-tooltip: 10;
     --z-fixed: 100;
-
 }
 
 * {
@@ -110,6 +110,17 @@ input:focus, textarea:focus {
 }
 
 @media screen and (max-width: 1024px) {
+    :root {
+        --biggest-font-size: 2rem;
+        --title-font-size: 1.5rem;
+        --big-font-size: 1.2rem;
+        --normal-font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+    
     .container {
         max-width: 768px;
     }

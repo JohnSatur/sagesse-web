@@ -113,7 +113,9 @@
     .nav__item {
         padding-inline: 0;
         height: auto;
-        font-size: 1.3rem;
+        font-size: var(--big-font-size);
+        text-align: left;
+
     }
 
     .nav__btn {
@@ -138,6 +140,36 @@
     .nav__menu {
         left: -50vw;
         width: 50vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .nav__logo {
+        height: 50px;
+        width: auto;
+    }
+
+    .nav {
+        height: 100%;
+        padding-block: .5rem;
+    }
+
+    .nav__menu {
+        padding-inline: 1rem;
+    }
+
+    .nav__mobile-logo {
+        display: inline-block;
+        width:80px;
+    }
+
+    .nav__close, .nav__toggle {
+        font-size: var(--title-font-size);
+    }
+
+    .nav__close {
+        top: 1rem;
+        right: 1rem;
     }
 }
 
