@@ -71,6 +71,10 @@
 }
 
 @media screen and (max-width: 1280px) {
+    .nav__logo {
+        height: 50px;
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -86,7 +90,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        gap: 5rem;
+        gap: 2rem;
         padding-inline: 3rem;
         transition: .15s ease-in;
     }
@@ -144,10 +148,6 @@
 }
 
 @media screen and (max-width: 640px) {
-    .nav__logo {
-        height: 50px;
-        width: auto;
-    }
 
     .nav {
         height: 100%;

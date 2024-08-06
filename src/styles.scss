@@ -107,10 +107,16 @@ input:focus, textarea:focus {
     .container {
         max-width: 1024px;
     }
+
+    p {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     :root {
+        --header-height: 3rem;
+        
         --biggest-font-size: 2rem;
         --title-font-size: 1.5rem;
         --big-font-size: 1.2rem;
@@ -129,13 +135,5 @@ input:focus, textarea:focus {
 @media screen and (max-width: 768px) {
     .container {
         max-width: 640px;
-        margin-inline: 2rem;
     }
 }
-
-// @media screen and (max-width: 640px) {
-//     .container {
-//         width: 100%;
-//         margin-inline: 2rem;
-//     }
-// }

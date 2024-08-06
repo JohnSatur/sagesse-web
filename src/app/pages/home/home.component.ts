@@ -24,8 +24,19 @@ export class HomeComponent {
     const swiperElementConstructor = document.querySelector('swiper-container');
     
     const swiperOptions: SwiperOptions = {
-      slidesPerView: 3,
-      spaceBetween: 24
+      slidesPerView: 1,
+      spaceBetween: 8,
+
+      breakpoints: {
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 16
+        },
+        1536: {
+          slidesPerView: 3,
+          spaceBetween: 24
+        }
+      }
     };
   
     Object.assign(swiperElementConstructor!, swiperOptions);
