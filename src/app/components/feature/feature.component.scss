@@ -42,3 +42,13 @@
 .feature-right {
     align-items: flex-end;
 }
+
+@media screen and (max-width: 768px) {
+    .feature {
+        width: 100%;
+    }
+
+    .feature-left, .feature-right {
+        align-items: center;
+    }
+}

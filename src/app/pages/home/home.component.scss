@@ -719,3 +719,37 @@
         left: 200px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .mobile-br {
+        display: none;
+    }
+    
+    // Video production
+    .production__container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .production__title {
+        text-align: center;
+    }
+
+    .production__alt-btn {
+        gap: .5rem;
+
+        .alt-btn-bg {
+            height: 45px;
+            width: 45px;
+
+            i {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    // Features
+    .features__row {
+        flex-direction: column;
+    }
+}

@@ -52,3 +52,15 @@
         padding: 1rem 2rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .contact-link__container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contact-link__info {
+        align-items: center;
+        gap: 1rem;
+    }
+}
