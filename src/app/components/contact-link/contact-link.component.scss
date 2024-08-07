@@ -16,7 +16,7 @@
 }
 
 .contact-link__title {
-    font-size: 3rem;
+    font-size: var(--title-font-size);
     color: var(--second-color2);
     font-family: var(--title-font);
     font-weight: 700;
@@ -40,5 +40,15 @@
 
     i {
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-link__container {
+        gap: 3rem;
+    }
+
+    .contact-link__button {
+        padding: 1rem 2rem;
     }
 }
