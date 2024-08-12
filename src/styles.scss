@@ -137,3 +137,10 @@ input:focus, textarea:focus {
         max-width: 640px;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 100%;
+        padding-inline: 1.5rem;
+    }
+}

@@ -64,3 +64,9 @@
         gap: 1rem;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .contact-link__description {
+        text-align: center;
+    }
+}
