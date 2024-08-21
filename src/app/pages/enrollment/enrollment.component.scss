@@ -93,3 +93,27 @@
     -ms-user-select: none;
     user-select: none;
 }
+
+@media screen and (max-width: 1536px) {
+    
+}
+
+@media screen and (max-width: 1280px) {
+    
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .steps__container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero__subtitle {
+        text-align: center;
+    }
+}
