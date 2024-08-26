@@ -11,4 +11,5 @@ export class LevelCardComponent {
   @Input() title: string = '';
   @Input() imgUrl: string = '';
   @Input() color: string = '';
+  @Input() link: string = '';
 }
