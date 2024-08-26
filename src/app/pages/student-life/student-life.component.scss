@@ -26,15 +26,15 @@
 }
 
 .hero-img1 {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     top: 10rem;
     left: 10rem;
 }
 
 .hero-img2 {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     top: 10rem;
     right: 12rem;
 }
@@ -118,4 +118,146 @@
 .collage-img19 {
     grid-column: 2 / 4;
     grid-row: 2 / 4;
+}
+
+@media screen and (max-width: 1536px) {
+    .hero-img1 {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .hero-img2 {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .hero-img3 {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .hero-img4 {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .hero-img1 {
+        width: 280px;
+        height: 280px;
+        top: 8rem;
+        left: 5rem;
+    }
+    
+    .hero-img2 {
+        width: 230px;
+        height: 230px;
+        top: 8rem;
+        right: 8rem;
+    }
+    
+    .hero-img3 {
+        width: 240px;
+        height: 240px;
+        bottom: 4rem;
+        left: 12rem;
+    }
+    
+    .hero-img4 {
+        width: 230px;
+        height: 230px;
+        right: 8rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-img1 {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .hero-img2 {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hero-img3 {
+        width: 220px;
+        height: 220px;
+        left: 8rem;
+        bottom: 6rem;
+    }
+    
+    .hero-img4 {
+        width: 210px;
+        height: 210px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-img1 {
+        width: 200px;
+        height: 200px;
+        top: 8rem;
+        left: 3rem;
+    }
+    
+    .hero-img2 {
+        width: 160px;
+        height: 160px;
+        right: 2rem;
+    }
+    
+    .hero-img3 {
+        width: 190px;
+        height: 190px;
+        bottom: 3rem;
+        left: 3rem;
+    }
+    
+    .hero-img4 {
+        width: 160px;
+        height: 160px;
+        right: 5rem;
+    }
+
+    .collage__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .collage__title {
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero-img1 {
+        width: 150px;
+        height: 150px;
+        top: 7rem;
+        left: 1rem;
+    }
+    
+    .hero-img2 {
+        width: 130px;
+        height: 130px;
+        right: 2rem;
+    }
+    
+    .hero-img3 {
+        width: 150px;
+        height: 150px;
+        bottom: 2rem;
+        left: 2rem;
+    }
+    
+    .hero-img4 {
+        width: 150px;
+        height: 150px;
+        right: 3rem;
+    }
 }
