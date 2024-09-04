@@ -351,6 +351,8 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: -1;
 }
 
@@ -386,6 +388,7 @@
     font-family: var(--title-font);
     font-size: var(--biggest-font-size);
     color: var(--light-color);
+    text-align: center;
     z-index: 14;
 }
 
@@ -406,150 +409,6 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgba(117, 207, 228, 0.00) 63.36%, rgba(117, 207, 228, 1.00) 100%);
-}
-
-.collage__img {
-    position: absolute;
-    border-radius: 50%;
-    width: auto;
-    overflow: hidden;
-
-    .collage__img-overlay {
-        position: absolute;
-        opacity: .4;
-        width: 100%;
-        height: 100%;
-    }
-
-    img {
-        width: 100%;
-        // height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-}
-
-.collage__img-1 {
-    width: 50vw;
-    left: -14vw;
-    top: -14vh;
-
-    .collage__img-overlay {
-        background-color: var(--second-color5);
-    }
-}
-
-.collage__img-2 {
-    width: 40vw;
-    left: 40vw;
-    top: -8vh;
-
-    .collage__img-overlay {
-        background-color: var(--second-color1);
-    }
-}
-
-.collage__img-3 {
-    width: 35vw;
-    right: -5vw;
-    top: -15vh;
-    z-index: 12;
-
-    .collage__img-overlay {
-        background-color: var(--second-color2);
-    }
-}
-
-// .collage__img-4 {
-//     width: 300px;
-// }
-
-.collage__img-5 {
-    width: 40vw;
-    right: -10vw;
-    bottom: -20vh;
-    z-index: 11;
-
-    .collage__img-overlay {
-        background-color: var(--first-color2);
-    }
-}
-
-.collage__img-6 {
-    width: 30vw;
-    left: 25vw;
-    top: -10vh;
-    z-index: 5;
-
-    .collage__img-overlay {
-        background-color: var(--first-color4);
-    }
-}
-
-.collage__img-7 {
-    width: 28vw;
-    left: 50vh;
-    top: 50vh;
-    z-index: 6;
-
-    .collage__img-overlay {
-        background-color: var(--first-color5);
-    }
-}
-
-.collage__img-8 {
-    width: 30vw;
-    right: 482px;
-    bottom: 85px;
-    z-index: 7;
-
-    .collage__img-overlay {
-        background-color: var(--first-color1);
-    }
-}
-
-.collage__img-9 {
-    width: 35vw;
-    left: 515px;
-    bottom: -198px;
-    z-index: 9;
-
-    .collage__img-overlay {
-        background-color: var(--second-color5);
-    }
-}
-
-.collage__img-10 {
-    width: 30vw;
-    right: -224px;
-    top: -73px;
-    z-index: 10;
-
-    .collage__img-overlay {
-        background-color: var(--first-color1);
-    }
-}
-
-.collage__img-11 {
-    width: 20vw;
-    right: 492px;
-    bottom: -151px;
-    z-index: 8;
-
-    .collage__img-overlay {
-        background-color: var(--second-color1);
-    }
-}
-
-.collage__img-12 {
-    width: 30vw;
-    left: -65px;
-    bottom: -186px;
-    z-index: 3;
-
-    .collage__img-overlay {
-        background-color: var(--first-color1);
-    }
 }
 
 // Map
