@@ -26,7 +26,11 @@ export class HomeComponent {
     const swiperOptions: SwiperOptions = {
       slidesPerView: 1,
       spaceBetween: 8,
-
+      loop: true,
+      autoplay: {
+        delay: 1500, // Tiempo en milisegundos entre cada slide (3 segundos en este ejemplo)
+        disableOnInteraction: false // Permite que el autoplay continúe incluso si el usuario interactúa
+    },
       breakpoints: {
         1024: {
           slidesPerView: 2,
