@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './button.component.html',
-  styleUrl: './button.component.scss'
+  styleUrl: './button.component.scss',
 })
 export class ButtonComponent {
   @Input() text: string = 'Click!';
@@ -14,5 +14,4 @@ export class ButtonComponent {
   @Input() icon: string = '';
   @Input() buttonType: 'fill' | 'outline' = 'fill';
   @Input() buttonColor: 'first' | 'second' = 'first';
-
 }

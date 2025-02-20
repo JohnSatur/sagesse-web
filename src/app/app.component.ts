@@ -12,4 +12,8 @@ import { FooterComponent } from './components/footer/footer.component';
 })
 export class AppComponent {
   title = 'Colegio Sagesse';
+
+  test() {
+    console.log('test');
+  }
 }
