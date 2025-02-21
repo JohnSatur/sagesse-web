@@ -1,0 +1,36 @@
+<div class="levels__card">
+  <div
+    class="level__container container"
+    [ngClass]="{
+      'left-card': imagePosition === 'left',
+      'right-card': imagePosition === 'right'
+    }"
+  >
+    <!-- Imagen -->
+    <img
+      [src]="imageUrl"
+      alt=""
+      class="level__img"
+      [ngClass]="{
+        'left-img': imagePosition === 'left',
+        'right-img': imagePosition === 'right'
+      }"
+    />
+
+    <!-- Contenido -->
+    <div
+      class="level__copy"
+      [ngClass]="{
+        'left-copy': imagePosition === 'left',
+        'right-copy': imagePosition === 'right'
+      }"
+    >
+      <h3 class="level__title">{{ title }}</h3>
+      <p class="level__description">{{ description }}</p>
+
+      <a [href]="link" class="level__button">
+        {{ buttonText }} <i class="ri-send-plane-fill"></i>
+      </a>
+    </div>
+  </div>
+</div>

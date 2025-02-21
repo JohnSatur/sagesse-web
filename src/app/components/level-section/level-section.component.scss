@@ -1,0 +1,81 @@
+.level__img {
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &.left-img {
+    left: 0;
+  }
+
+  &.right-img {
+    right: 0;
+  }
+}
+
+.levels__card {
+  background-color: var(--white-color);
+}
+
+.level__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  position: relative;
+
+  &.right-card {
+    flex-direction: row-reverse;
+  }
+}
+
+.level__copy {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding-block: 2rem;
+
+  &.left-copy {
+    align-items: flex-start;
+
+    .level__description {
+      text-align-last: left;
+    }
+  }
+
+  &.right-copy {
+    align-items: flex-end;
+
+    .level__description {
+      text-align-last: right;
+    }
+  }
+}
+
+.level__title {
+  font-size: var(--title-font-size);
+  color: var(--text-color);
+}
+
+.level__button {
+  padding: 1.5rem 3rem;
+  color: var(--light-color);
+  background-color: var(--first-color1);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  i {
+    font-size: 2rem;
+  }
+}

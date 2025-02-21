@@ -1,90 +1,77 @@
-<main class="main">
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero__container container">
-            <div class="hero__copy">
-                <h2 class="hero__subtitle">Conoce nuestra</h2>
-                <h1 class="hero__title">Oferta Educativa</h1>
-                <p class="hero__description">Educación integral con enfoque humanista.</p>
-            </div>
-        </div>
+<main class="main bg-gray-100">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__container container">
+      <div class="hero__copy">
+        <h2 class="hero__subtitle">Conoce nuestra</h2>
+        <h1 class="hero__title">Oferta Educativa</h1>
+        <p class="hero__description">
+          Educación integral con enfoque humanista.
+        </p>
+      </div>
+    </div>
 
-        <div class="hero__collage">
-            <img src="img/collage3.jpg" alt="" class="hero__img1">
-            <img src="img/collage4.jpg" alt="" class="hero__img2">
-            <img src="img/collage5.jpg" alt="" class="hero__img3">
-            <img src="img/collage6.jpg" alt="" class="hero__img4">
-            <div class="hero__circle5"></div>
-            <div class="hero__circle4"></div>
-            <div class="hero__circle3"></div>
-            <div class="hero__circle2"></div>
-            <div class="hero__circle1"></div>
-        </div>
-    </section>
+    <div class="hero__collage">
+      <img src="img/collage3.jpg" alt="" class="hero__img1" />
+      <img src="img/collage4.jpg" alt="" class="hero__img2" />
+      <img src="img/collage5.jpg" alt="" class="hero__img3" />
+      <img src="img/collage6.jpg" alt="" class="hero__img4" />
+      <div class="hero__circle5"></div>
+      <div class="hero__circle4"></div>
+      <div class="hero__circle3"></div>
+      <div class="hero__circle2"></div>
+      <div class="hero__circle1"></div>
+    </div>
+  </section>
 
-    <!-- Level cards -->
-    <section class="levels section">
-        <div class="levels__card">
-            <div class="level__container left-card container">
-                <img src="img/collage6.jpg" alt="" class="level__img left-img">
-                <div class="level__copy left-copy">
-                    <h3 class="level__title">Maternal</h3>
-                    <p class="level__description">Es el primer paso en el mundo educativo de tu pequeño. En maternal, los niños exploran el mundo a través de juegos, canciones y actividades sensoriales. Desarrollan habilidades básicas como la coordinación, la comunicación y la interacción social.</p>
+  <!-- Level cards -->
+  <section class="levels section">
+    <app-level-section
+      title="Maternal"
+      description="Es el primer paso en el mundo educativo de tu pequeño. En maternal, los niños exploran el mundo a través de juegos, canciones y actividades sensoriales. Desarrollan habilidades básicas como la coordinación, la comunicación y la interacción social."
+      imageUrl="img/collage6.jpg"
+      imagePosition="left"
+      buttonText="Ver más"
+      link="https://api.whatsapp.com/send?phone=5212281229993&text=Informes%20sobre%20el%20plan%20de%20estudios%20de%20Maternal"
+    />
 
-                    <button class="level__button">Ver más <i class="ri-send-plane-fill"></i></button>
-                </div>
-            </div>
-        </div>
+    <app-level-section
+      title="Preescolar"
+      description="En preescolar, los niños continúan su desarrollo integral, fortaleciendo habilidades como la lectoescritura y las matemáticas de una manera lúdica. Aprenden sobre el mundo que les rodea, desarrollan su creatividad y su imaginación, y establecen las bases para un aprendizaje más formal."
+      imageUrl="img/collage7.jpg"
+      imagePosition="right"
+      buttonText="Ver más"
+      link="https://api.whatsapp.com/send?phone=5212281229993&text=Informes%20sobre%20el%20plan%20de%20estudios%20de%20Preescolar"
+    />
 
-        <div class="levels__card">
-            <div class="level__container right-card container">
-                <img src="img/collage7.jpg" alt="" class="level__img right-img">
-                <div class="level__copy right-copy">
-                    <h3 class="level__title">Preescolar</h3>
-                    <p class="level__description">En preescolar, los niños continúan su desarrollo integral, fortaleciendo habilidades como la lectoescritura y las matemáticas de una manera lúdica. Aprenden sobre el mundo que les rodea, desarrollan su creatividad y su imaginación, y establecen las bases para un aprendizaje más formal.</p>
+    <app-level-section
+      title="Prefirst"
+      description="Este nivel es una transición entre preescolar y primer grado. Se enfoca en preparar a los niños para el rigor académico de la primaria, trabajando en habilidades como la lectura, la escritura y las matemáticas de una manera más estructurada."
+      imageUrl="img/collage8.jpg"
+      imagePosition="left"
+      buttonText="Ver más"
+      link="https://api.whatsapp.com/send?phone=5212281229993&text=Informes%20sobre%20el%20plan%20de%20estudios%20de%20Prefirst"
+    />
 
-                    <button class="level__button">Ver más <i class="ri-send-plane-fill"></i></button>
-                </div>
-            </div>
-        </div>
+    <app-level-section
+      title="Primaria"
+      description="Es una etapa fundamental en la formación de los niños. Aquí adquieren conocimientos básicos en áreas como lenguaje, matemáticas, ciencias sociales y naturales. Se desarrollan habilidades de pensamiento crítico, resolución de problemas y trabajo en equipo."
+      imageUrl="img/collage9.jpg"
+      imagePosition="right"
+      buttonText="Ver más"
+      link="https://api.whatsapp.com/send?phone=5212281229993&text=Informes%20sobre%20el%20plan%20de%20estudios%20de%20Primaria"
+    />
 
-        <div class="levels__card">
-            <div class="level__container left-card container">
-                <img src="img/collage8.jpg" alt="" class="level__img left-img">
-                <div class="level__copy left-copy">
-                    <h3 class="level__title">Prefirst</h3>
-                    <p class="level__description">Este nivel es una transición entre preescolar y primer grado. Se enfoca en preparar a los niños para el rigor académico de la primaria, trabajando en habilidades como la lectura, la escritura y las matemáticas de una manera más estructurada.</p>
+    <app-level-section
+      title="Secundaria"
+      description="Aquí nuestros estudiantes exploran diferentes áreas del conocimiento y se preparan para la educación superior o el mundo laboral. Se profundizan los conocimientos adquiridos en primaria y se desarrollan habilidades más avanzadas como el pensamiento abstracto y la investigación."
+      imageUrl="img/collage10.jpg"
+      imagePosition="left"
+      buttonText="Ver más"
+      link="https://api.whatsapp.com/send?phone=5212281229993&text=Informes%20sobre%20el%20plan%20de%20estudios%20de%20Secundaria"
+    />
+  </section>
 
-                    <button class="level__button">Ver más <i class="ri-send-plane-fill"></i></button>
-                </div>
-            </div>
-        </div>
-
-        <div class="levels__card">
-            <div class="level__container right-card container">
-                <img src="img/collage9.jpg" alt="" class="level__img right-img">
-                <div class="level__copy right-copy">
-                    <h3 class="level__title">Primaria</h3>
-                    <p class="level__description">Es una etapa fundamental en la formación de los niños. Aquí adquieren conocimientos básicos en áreas como lenguaje, matemáticas, ciencias sociales y naturales. Se desarrollan habilidades de pensamiento crítico, resolución de problemas y trabajo en equipo.</p>
-
-                    <button class="level__button">Ver más <i class="ri-send-plane-fill"></i></button>
-                </div>
-            </div>
-        </div>
-
-        <div class="levels__card">
-            <div class="level__container left-card container">
-                <img src="img/collage10.jpg" alt="" class="level__img left-img">
-                <div class="level__copy left-copy">
-                    <h3 class="level__title">Secundaria</h3>
-                    <p class="level__description">Aquí nuestros estudiantes exploran diferentes áreas del conocimiento y se preparan para la educación superior o el mundo laboral. Se profundizan los conocimientos adquiridos en primaria y se desarrollan habilidades más avanzadas como el pensamiento abstracto y la investigación.</p>
-
-                    <button class="level__button">Ver más <i class="ri-send-plane-fill"></i></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <app-contact-link></app-contact-link>
+  <!-- Contact -->
+  <app-contact-link />
 </main>

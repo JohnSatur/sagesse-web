@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, signal } from '@angular/core';
 import { ButtonComponent } from '../../components/button/button.component';
-import { FeatureComponent } from '../../components/feature/feature.component';
 import { LevelCardComponent } from '../../components/level-card/level-card.component';
 
 import { register, SwiperContainer } from 'swiper/element/bundle';
@@ -10,12 +9,11 @@ import { ContactLinkComponent } from '../../components/contact-link/contact-link
 register();
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [CommonModule, ButtonComponent, FeatureComponent, LevelCardComponent, ContactLinkComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+    selector: 'app-home',
+    imports: [CommonModule, ButtonComponent, LevelCardComponent, ContactLinkComponent],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss'
 })
 export class HomeComponent {
   swiperElement = signal<SwiperContainer | null>(null);
